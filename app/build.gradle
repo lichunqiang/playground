@@ -52,4 +52,5 @@ dependencies {
     compile rootProject.ext.dependencies['okhttp']
     compile rootProject.ext.dependencies['sweetalert']
     compile rootProject.ext.dependencies['baseAdapter']
+    compile 'com.android.support:design:23.3.0'
 }
