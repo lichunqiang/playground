@@ -8,6 +8,7 @@ import android.widget.Button;
 
 import cn.pedant.SweetAlert.SweetAlertDialog;
 import lzuer.net.playground.R;
+import lzuer.net.playground.http.GithubService;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
         //initSweet();
         initView();
+        new GithubService();
     }
 
     private void initView() {
