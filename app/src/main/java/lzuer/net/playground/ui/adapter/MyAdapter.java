@@ -1,18 +1,27 @@
 package lzuer.net.playground.ui.adapter;
 
+import android.content.Context;
 import android.support.v7.widget.RecyclerView;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import java.util.List;
 
 /**
  * Created by chunqiang on 2016/5/11.
  */
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
-    private String[] mDataSet;
 
-    public MyAdapter(String[] dataset) {
-        mDataSet = dataset;
+    private LayoutInflater layoutInflater;
+    private Context mContext;
+    private List<String> mDataSet;
+
+    public MyAdapter(Context context, List<String> datas) {
+        this.mDataSet = datas;
+        this.mContext = context;
+        layoutInflater = LayoutInflater.from(context);
     }
 
     @Override
@@ -31,7 +40,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
 
     @Override
     public int getItemCount() {
-        return mDataSet.length;
+        return mDataSet.size();
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {

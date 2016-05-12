@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Playground</string>
     <string name="title_activity_recycler_demo">RecyclerDemo</string>
+    <string name="action_settings">Settings</string>
 </resources>
