@@ -1,7 +1,9 @@
 package lzuer.net.playground.http.api;
 
 /**
- * Created by chunqiang on 2016/5/12.
+ * 一个.java文件可以包含多个类「除去内部类」，当只能有一个public的类，并且public类须与文件同名.
+ *
+ * @see https://github.com/CharonChui/AndroidNote
  */
 final public class GithubResponse {
     public static final String TAG = "GithubResponse";
