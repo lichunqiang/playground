@@ -4,25 +4,20 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
-import android.view.View;
-import android.widget.Button;
 
+import butterknife.ButterKnife;
+import butterknife.OnClick;
 import cn.pedant.SweetAlert.SweetAlertDialog;
 import lzuer.net.playground.R;
-import lzuer.net.playground.http.GithubService;
 
 public class MainActivity extends ActionBarActivity {
-
-    private Button mShowRecyclerViewDemoBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        ButterKnife.bind(this);
         //initSweet();
-        initView();
-        new GithubService();
     }
 
     @Override
@@ -31,16 +26,10 @@ public class MainActivity extends ActionBarActivity {
         return true;
     }
 
-    private void initView() {
-        mShowRecyclerViewDemoBtn = (Button) findViewById(R.id.show_rv_demo_btn);
-        mShowRecyclerViewDemoBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent showRecyclerViewIntent = new Intent(MainActivity.this, RecyclerDemoActivity.class);
-                startActivity(showRecyclerViewIntent);
-            }
-        });
-
+    @OnClick(R.id.show_rv_demo_btn)
+    void goDemoPage() {
+        Intent showRecyclerViewIntent = new Intent(MainActivity.this, RecyclerDemoActivity.class);
+        startActivity(showRecyclerViewIntent);
     }
 
     private void initSweet() {
