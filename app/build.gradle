@@ -58,4 +58,5 @@ dependencies {
     compile rootProject.ext.dependencies['gson']
     compile rootProject.ext.dependencies['butterknife']
     apt rootProject.ext.dependencies['butterknife-compiler']
+    compile rootProject.ext.dependencies['springView']
 }

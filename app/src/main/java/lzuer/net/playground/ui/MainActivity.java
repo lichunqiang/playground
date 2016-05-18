@@ -11,8 +11,11 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 import cn.pedant.SweetAlert.SweetAlertDialog;
 import lzuer.net.playground.R;
+import lzuer.net.playground.ui.pringView.PringViewActivity;
 //http://www.68idc.cn/help/mobilesys/android/20160313605951.html
 public class MainActivity extends AppCompatActivity {
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +51,12 @@ public class MainActivity extends AppCompatActivity {
     void goDemoPage() {
         Intent showRecyclerViewIntent = new Intent(MainActivity.this, RecyclerDemoActivity.class);
         startActivity(showRecyclerViewIntent);
+    }
+
+    @OnClick(R.id.btn_pringView_demo)
+    public void goSpringViewDemo() {
+        Intent springViewDemoPage = new Intent(MainActivity.this, PringViewActivity.class);
+        startActivity(springViewDemoPage);
     }
 
     private void initSweet() {

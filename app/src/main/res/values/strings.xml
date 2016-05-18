@@ -5,4 +5,8 @@
     <string name="recyclerviewdemo">RecyclerViewDemo</string>
     <string name="sweetalert">SweetAlert</string>
     <string name="action_delete">删除</string>
+    <string name="btn_recyclerviewdemo">RecyclerViewDemo</string>
+    <string name="btn_pringview">PringView</string>
+    <string name="title_activity_demo1">Demo1Activity</string>
+    <string name="title_activity_login">Login</string>
 </resources>
