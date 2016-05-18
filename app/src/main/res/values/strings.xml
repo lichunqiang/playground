@@ -4,4 +4,5 @@
     <string name="action_settings">Settings</string>
     <string name="recyclerviewdemo">RecyclerViewDemo</string>
     <string name="sweetalert">SweetAlert</string>
+    <string name="action_delete">删除</string>
 </resources>

@@ -31,7 +31,7 @@ public class RecyclerDemoActivity extends AppCompatActivity {
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
 
-        MyAdapter adapter = new MyAdapter(mDatas);
+        MyAdapter adapter = new MyAdapter(this, mDatas);
         recyclerView.setAdapter(adapter);
     }
 

@@ -2,8 +2,11 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:id="@+id/scrollView" >
-
+    android:background="#FFF"
+     >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -11,10 +14,11 @@
         android:id="@+id/show_rv_demo_btn" />
 
     <Button
+        android:layout_below="@+id/show_rv_demo_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/sweetalert"
         android:id="@+id/show_sweetalert_demo_btn" />
 
-
+    </RelativeLayout>
 </ScrollView>
