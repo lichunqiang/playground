@@ -15,8 +15,6 @@ import lzuer.net.playground.ui.pringView.PringViewActivity;
 //http://www.68idc.cn/help/mobilesys/android/20160313605951.html
 public class MainActivity extends AppCompatActivity {
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

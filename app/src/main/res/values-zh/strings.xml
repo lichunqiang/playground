@@ -2,4 +2,5 @@
 <resources>
     <string name="sweetalert">SweetAlert</string>
     <string name="action_delete">删除</string>
+    <string name="auth_hint_pwd">Password</string>
 </resources>

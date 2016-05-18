@@ -9,4 +9,13 @@
     <string name="btn_pringview">PringView</string>
     <string name="title_activity_demo1">Demo1Activity</string>
     <string name="title_activity_login">Login</string>
+    <string name="auth_hint_email">Email</string>
+    <string name="auth_hint_pwd">Password</string>
+    <string name="auth_login_btn_txt">Login</string>
+    <string name="auth_go_reg">No account yet? Create one</string>
+    <string name="logo">Logo</string>
+    <string name="title_activity_signup">SignupActivity</string>
+    <string name="hint_name">Name</string>
+    <string name="auth_signup_btn">Create Account</string>
+    <string name="auth_go_login">Already a member? Login</string>
 </resources>

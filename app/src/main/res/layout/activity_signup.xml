@@ -1,24 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    tools:context="lzuer.net.playground.ui.auth.SignupActivity">
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="@dimen/activity_login_padding_top"
-        android:paddingLeft="@dimen/auth_padding"
-        android:paddingRight="@dimen/auth_padding">
+        android:paddingLeft="@dimen/size_24"
+        android:paddingRight="@dimen/size_24">
 
-        <ImageView android:src="@drawable/ic_launcher"
-            android:layout_width="wrap_content"
+        <ImageView
+            android:layout_width="match_parent"
             android:layout_height="@dimen/login_logo_height"
-            android:layout_marginBottom="@dimen/login_logo_margin_btm"
-            android:contentDescription="@string/logo"
-            android:layout_gravity="center_horizontal" />
+            android:layout_marginBottom="@dimen/size_24"
+            android:layout_gravity="center_horizontal"/>
 
-        <!-- Email Label -->
+        <!--  Name Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/auth_control_margin"
+            android:layout_marginBottom="@dimen/auth_control_margin">
+            <EditText android:id="@+id/input_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords"
+                android:hint="@string/hint_name" />
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- email label -->
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -28,10 +44,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress"
-                android:hint="@string/auth_hint_email" />
+                android:hint="@string/auth_hint_email"/>
         </android.support.design.widget.TextInputLayout>
 
-        <!-- Password Label -->
+        <!-- password label -->
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -44,22 +60,24 @@
                 android:hint="@string/auth_hint_pwd"/>
         </android.support.design.widget.TextInputLayout>
 
+        <!--Button-->
         <android.support.v7.widget.AppCompatButton
-            android:id="@+id/btn_login"
+            android:id="@+id/btn_signup"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/size_24"
             android:layout_marginBottom="@dimen/size_24"
             android:padding="@dimen/size_12"
-            android:text="@string/auth_login_btn_txt"/>
+            android:text="@string/auth_signup_btn"/>
 
-        <TextView android:id="@+id/link_signup"
+        <TextView android:id="@+id/link_login"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="24dp"
-            android:text="@string/auth_go_reg"
+            android:layout_marginBottom="@dimen/size_24"
+            android:text="@string/auth_go_login"
             android:gravity="center"
             android:textSize="@dimen/auth_tip_txt_size"/>
 
     </LinearLayout>
+
 </ScrollView>
