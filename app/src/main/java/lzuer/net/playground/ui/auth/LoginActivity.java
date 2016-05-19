@@ -2,6 +2,7 @@ package lzuer.net.playground.ui.auth;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -14,6 +15,8 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import lzuer.net.playground.R;
+import lzuer.net.playground.util.common.ToastUtils;
+
 //http://tikitoo.github.io/2016/05/17/beautiful-android-login-and-signup-screens-with-material-design-zh/
 public class LoginActivity extends AppCompatActivity {
 
@@ -33,6 +36,16 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         ButterKnife.bind(this);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        SharedPreferences sharedPreferences = this.getSharedPreferences("Playground", MODE_PRIVATE);
+        String name = sharedPreferences.getString("name", "");
+        ToastUtils.show(this, "name is " + name);
+
     }
 
     @OnClick(R.id.btn_login)

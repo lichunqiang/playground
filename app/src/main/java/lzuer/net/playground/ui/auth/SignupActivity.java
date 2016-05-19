@@ -1,6 +1,7 @@
 package lzuer.net.playground.ui.auth;
 
 import android.app.ProgressDialog;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -31,8 +32,29 @@ public class SignupActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
         ButterKnife.bind(this);
+
+        recoveryData();
     }
 
+    private void recoveryData() {
+        SharedPreferences sharedPreferences = this.getSharedPreferences("Playground", MODE_PRIVATE);
+        _nameText.setText(sharedPreferences.getString("name", ""));
+        _emailText.setText(sharedPreferences.getString("email", ""));
+        _passwordText.setText(sharedPreferences.getString("password", ""));
+    }
+
+    @Override
+    protected void onStop() {
+        SharedPreferences sharedPreferences = getSharedPreferences("Playground", MODE_PRIVATE);
+
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putString("name", _nameText.getText().toString());
+        editor.putString("email", _emailText.getText().toString());
+        editor.putString("password", _passwordText.getText().toString());
+
+        editor.apply();
+        super.onStop();
+    }
 
     @OnClick(R.id.link_login)
     void goLoginPage() {
