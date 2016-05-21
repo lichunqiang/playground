@@ -77,10 +77,10 @@ public class LoginActivity extends AppCompatActivity {
         }, 1000);
     }
 
-    @Override
-    public void onBackPressed() {
-        moveTaskToBack(true);
-    }
+//    @Override
+//    public void onBackPressed() {
+//        moveTaskToBack(true);
+//    }
 
     /**
      * Handle login success.

@@ -3,4 +3,7 @@
     <string name="sweetalert">SweetAlert</string>
     <string name="action_delete">删除</string>
     <string name="auth_hint_pwd">Password</string>
+    <string name="menu_bubble">Bubble</string>
+    <string name="flash_logo_desc">Flash logo</string>
+    <string name="welcome_msg">欢迎使用</string>
 </resources>

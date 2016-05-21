@@ -1,32 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#FFF"
-     >
-    <RelativeLayout
+    android:background="#FFF">
+
+    <android.support.v7.widget.LinearLayoutCompat
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-    <Button
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/recyclerviewdemo"
-        android:id="@+id/show_rv_demo_btn" />
+        android:orientation="vertical">
 
-    <Button
-        android:layout_below="@+id/show_rv_demo_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/sweetalert"
-        android:id="@+id/show_sweetalert_demo_btn" />
         <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/btn_pringview"
-        android:id="@+id/btn_pringView_demo"
-        android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/show_rv_demo_btn"
-        android:layout_toEndOf="@+id/show_rv_demo_btn" />
+            android:id="@+id/show_rv_demo_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/recyclerviewdemo" />
 
-    </RelativeLayout>
+        <Button
+            android:id="@+id/show_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/recyclerviewdemo" />
+
+        <Button
+            android:id="@+id/show_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/recyclerviewdemo" />
+
+        <Button
+            android:id="@+id/show_sweetalert_demo_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sweetalert" />
+
+        <Button
+            android:id="@+id/btn_pringView_demo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_pringview" />
+
+    </android.support.v7.widget.LinearLayoutCompat>
 </ScrollView>

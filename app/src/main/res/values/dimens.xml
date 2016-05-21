@@ -11,4 +11,8 @@
     <dimen name="auth_tip_txt_size">16sp</dimen>
     <dimen name="size_24">24dp</dimen>
     <dimen name="size_12">12dp</dimen>
+    <dimen name="size_8">8dp</dimen>
+    <dimen name="size_16">16dp</dimen>
+    <dimen name="size_1">1dp</dimen>
+    <dimen name="size_32">32dp</dimen>
 </resources>

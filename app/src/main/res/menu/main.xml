@@ -7,6 +7,12 @@
         android:id="@+id/action_settings"
         android:title="@string/action_settings" />
     <item
+        android:id="@+id/action_login"
+        android:title="@string/menu_login" />
+    <item
+        android:id="@+id/action_bubble"
+        android:title="@string/menu_bubble" />
+    <item
         android:id="@+id/action_delete"
         android:title="@string/action_delete"
         android:icon="@drawable/ic_menu_delete"

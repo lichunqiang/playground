@@ -18,4 +18,8 @@
     <string name="hint_name">Name</string>
     <string name="auth_signup_btn">Create Account</string>
     <string name="auth_go_login">Already a member? Login</string>
+    <string name="menu_login">Login</string>
+    <string name="menu_bubble">Bubble</string>
+    <string name="flash_logo_desc">Flash logo</string>
+    <string name="welcome_msg">欢迎使用</string>
 </resources>
